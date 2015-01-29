@@ -1,6 +1,6 @@
 # deep-copy-js
 
-[![Build Status](https://travis-ci.org/ghatchue/jscopy.png?branch=master)](https://travis-ci.org/ghatchue/jscopy)
+[![Build Status](https://travis-ci.org/ghatchue/deep-copy-js.png?branch=master)](https://travis-ci.org/ghatchue/deep-copy-js)
 
 [![Selenium Test Status](https://saucelabs.com/browser-matrix/ghatchue_deepcopyjs.svg)](https://saucelabs.com/u/ghatchue_deepcopyjs)
 
