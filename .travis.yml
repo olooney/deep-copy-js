@@ -28,8 +28,8 @@ env:
   - BROWSER='ie7'
   - BROWSER='ie6'
   global:
-  - secure: uRgoFFxidjhI26Gp+Xl7ZqUvqVsC0RRkkdCVsKBgphdHDFBTcqvU6seN4n1NIG2nFn/rqC6dyBqRBrpPi1S+5shx0OOV7HyTOwT+XCKyy2Tq7gWRxAD6nQP5fPZYX3v69oePhPgqkO/Af4yMgKtpPWrtnDvxrQOSDLS3BZe80yU=
-  - secure: ALsypfH5A+peLbY9OQKkqxAqAhFUYWm2fHHO4Sp7DxPUi54ocHQ2aOiEzF4fcPOELRiQjp6iIDMNNep6az1ppI15mMV90bYciKgQC3+USe/7d500TI1gSIJKV/dITBU7PlGPuZIYsryqdPTry8XiAg29NQI1Lf3gsowP4QOew4E=
+  - secure: Jr1sJ3SFOzHrp5ibTumMmbHHuvWMv2S/ToA8XBfK9xrQAdIZYvd1x4K8vD8Ep3wXHmqmUeIrIO4BfjYatGedv4qWvVjA0rqSr66cR9fK624SRr9v4+UcpghAm+cc72D4J7j9Al6OxvzIJ8NaGreJrZmtVoqrsdv2th/+Bk17cqE=
+  - secure: SHqDfhP+1DHQ2JAZAbGK/c29tQ+ZFmeFqM8ZckIc3J3xGzwLsRCFeMlmT7wJltOg2V1/umLbL3d/ZFBALwJk9qZ0/PJ5P646G/Mo/+0zoSBNglsOWNUGOf1my8EIyPzVGEZ5FjGA7yez0aXsF+ABANaiaWAE8u7jNlJBniGQsRw=
 
 before_script:
 - curl https://gist.github.com/santiycr/5139565/raw/sauce_connect_setup.sh | bash
