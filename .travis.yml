@@ -1,0 +1,35 @@
+language: node_js
+
+node_js:
+- '0.10'
+
+env:
+  matrix:
+  - BROWSER='phantomjs'
+  - BROWSER='chrome39'
+  - BROWSER='chrome26'
+  - BROWSER='firefox35'
+  - BROWSER='firefox35'
+  - BROWSER='firefox6'
+  - BROWSER='firefox5'
+  - BROWSER='firefox4'
+  - BROWSER='firefox3.6'
+  - BROWSER='firefox3.0'
+  - BROWSER='opera12'
+  - BROWSER='opera11'
+  - BROWSER='safari8'
+  - BROWSER='safari7'
+  - BROWSER='safari6'
+  - BROWSER='safari5'
+  - BROWSER='ie11'
+  - BROWSER='ie10'
+  - BROWSER='ie9'
+  - BROWSER='ie8'
+  - BROWSER='ie7'
+  - BROWSER='ie6'
+  global:
+  - secure: uRgoFFxidjhI26Gp+Xl7ZqUvqVsC0RRkkdCVsKBgphdHDFBTcqvU6seN4n1NIG2nFn/rqC6dyBqRBrpPi1S+5shx0OOV7HyTOwT+XCKyy2Tq7gWRxAD6nQP5fPZYX3v69oePhPgqkO/Af4yMgKtpPWrtnDvxrQOSDLS3BZe80yU=
+  - secure: ALsypfH5A+peLbY9OQKkqxAqAhFUYWm2fHHO4Sp7DxPUi54ocHQ2aOiEzF4fcPOELRiQjp6iIDMNNep6az1ppI15mMV90bYciKgQC3+USe/7d500TI1gSIJKV/dITBU7PlGPuZIYsryqdPTry8XiAg29NQI1Lf3gsowP4QOew4E=
+
+before_script:
+- curl https://gist.github.com/santiycr/5139565/raw/sauce_connect_setup.sh | bash

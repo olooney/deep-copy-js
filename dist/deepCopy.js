@@ -1,46 +1,46 @@
 /* This file is part of OWL JavaScript Utilities.
 
- Copyright 2015 Oran Looney
+Copyright 2015 Oran Looney
 
- This library is dual licensed: you can redistribute it and/or modify
- it under the terms of LGPL or MIT license.
+This library is dual licensed: you can redistribute it and/or modify
+it under the terms of LGPL or MIT license.
 
- ### LGPL ###
+### LGPL ###
 
- OWL JavaScript Utilities is free software: you can redistribute it and/or
- modify it under the terms of the GNU Lesser General Public License
- as published by the Free Software Foundation, either version 3 of
- the License, or (at your option) any later version.
+OWL JavaScript Utilities is free software: you can redistribute it and/or 
+modify it under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation, either version 3 of
+the License, or (at your option) any later version.
 
- OWL JavaScript Utilities is distributed in the hope that it will be useful,
- but WITHOUT ANY WARRANTY; without even the implied warranty of
- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- GNU Lesser General Public License for more details.
+OWL JavaScript Utilities is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Lesser General Public License for more details.
 
- You should have received a copy of the GNU Lesser General Public
- License along with OWL JavaScript Utilities.  If not, see
- <http://www.gnu.org/licenses/>.
+You should have received a copy of the GNU Lesser General Public 
+License along with OWL JavaScript Utilities.  If not, see 
+<http://www.gnu.org/licenses/>.
 
- ### MIT ###
+### MIT ###
 
- Permission is hereby granted, free of charge, to any person obtaining a copy of
- this software and associated documentation files (the "Software"), to deal in
- the Software without restriction, including without limitation the rights to
- use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
- of the Software, and to permit persons to whom the Software is furnished to do
- so, subject to the following conditions:
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+of the Software, and to permit persons to whom the Software is furnished to do
+so, subject to the following conditions:
 
- The above copyright notice and this permission notice shall be included in all
- copies or substantial portions of the Software.
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
- THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
- SOFTWARE.
- */
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+*/
 'use strict';
 
 var owl = (function() {
@@ -52,14 +52,14 @@ var owl = (function() {
     // getOwnPropertyNames is also available if defineProperty is implemented.
     // See compatibility matrix at: http://kangax.github.io/compat-table/es5/
     hasDefineProperty:
-    typeof Object.defineProperty === 'function' && (function() {
-      try {
-        Object.defineProperty({}, 'x', {});
-        return true;
-      } catch (e) {
-        return false;
-      }
-    })(),
+      typeof Object.defineProperty === 'function' && (function() {
+        try {
+          Object.defineProperty({}, 'x', {});
+          return true;
+        } catch (e) {
+          return false;
+        }
+      })(),
 
     // Indicate if the JavaScript engine exhibits the DontEnum bug. This bug affects
     // internet explorer 8 or less, and is described in detail at:
@@ -107,9 +107,9 @@ var owl = (function() {
 
     // Instead, we explicitly type-check against built-in data-types
     return (object instanceof Number ||
-    object instanceof String ||
-    object instanceof Boolean ||
-    object instanceof Date);
+            object instanceof String ||
+            object instanceof Boolean ||
+            object instanceof Date);
   }
 
   // Shallow Copy
@@ -393,10 +393,10 @@ var owl = (function() {
         return true;
       }
       return (
-      typeof source.nodeType === 'number' &&
-      source.attributes !== undefined &&
-      source.childNodes &&
-      source.cloneNode
+        typeof source.nodeType === 'number' &&
+        source.attributes !== undefined &&
+        source.childNodes &&
+        source.cloneNode
       );
     }
   }
