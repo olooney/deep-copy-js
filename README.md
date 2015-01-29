@@ -1,4 +1,9 @@
 # deep-copy-js
+
+[![Build Status](https://travis-ci.org/ghatchue/deep-copy-js.png?branch=master)](https://travis-ci.org/ghatchue/deep-copy-js)
+
+[![Selenium Test Status](https://saucelabs.com/browser-matrix/ghatchue_deepcopyjs.svg)](https://saucelabs.com/u/ghatchue_deepcopyjs)
+
 Recursive deep copy, clone, and shallow copy functions for javascript
 
 [Documentation/Explanation](http://oranlooney.com/deep-copy-javascript/)
